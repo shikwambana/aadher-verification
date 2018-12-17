@@ -1,0 +1,13 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+@import "nDefaults.scss";
+
+.login-card .mat-card-image:first-child {
+    margin-top:0 !important
+}
+
+.primary-red-btn {
+    background-color: #ee1c22;
+    color: white;
+}

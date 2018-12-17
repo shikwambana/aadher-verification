@@ -1,0 +1,32 @@
+{
+    "b1c5f4af-15fe-c86a-e713-ed634c0ef25c": {
+        "appPageName": "login",
+        "componentName": "loginComponent",
+        "isEntry": false
+    },
+    "c4581771-ca63-f41c-3097-bf95322621ac": {
+        "appPageName": "home",
+        "componentName": "homeComponent",
+        "isEntry": false
+    },
+    "dd3691d2-d623-8efe-ea01-b9543d360deb": {
+        "appPageName": "loader",
+        "componentName": "loaderComponent",
+        "isEntry": false
+    },
+    "52b5a3b3-d005-37aa-017f-7bffa56090be": {
+        "appPageName": "scan",
+        "componentName": "scanComponent",
+        "isEntry": false
+    },
+    "0dc6ceea-5c79-8dec-3c9e-19a5db9d958d": {
+        "appPageName": "review",
+        "componentName": "reviewComponent",
+        "isEntry": false
+    },
+    "16700c37-8e6d-c345-d8df-0ef279de7f2f": {
+        "appPageName": "admin",
+        "componentName": "adminComponent",
+        "isEntry": false
+    }
+}

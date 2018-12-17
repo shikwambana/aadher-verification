@@ -1,0 +1,13 @@
+{
+    "appPageId": "0dc6ceea-5c79-8dec-3c9e-19a5db9d958d",
+    "appPageName": "review",
+    "componentName": "reviewComponent",
+    "selectorName": "bh-review",
+    "htmlFileName": "review.template.html",
+    "tsFileName": "review.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "artId": "",
+    "appName": "aadher-verification",
+    "description": "An app to scan images and convert them to text",
+    "lastModified": "2018-12-17T08:41:21.097Z",
+    "artURL": "http://localhost:3000/bhive-art/",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "dataSource": "neutrinos-delivery-rt",
+    "createDate": "2018-12-17T08:41:20.332Z"
+}
