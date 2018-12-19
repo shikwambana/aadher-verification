@@ -1,3 +1,29 @@
-<div fxLayout="column " fxLayoutAlign="center center" fxShow="true" fxHide="false"><img imgSrc="/Web/scan.jpg" width="80%">
-  <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="20" fxLayoutAlign="center stretch" fxShow="true" fxHide="false"><button mat-raised-button="">Scan</button><button mat-raised-button="" (click)="forward">Save</button></div>
+<div fxLayout="column " fxLayoutAlign="  none" fxShow="true" fxHide="false" fxFill="true">
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav="" mode="over" position="start" opened="true">
+      <mat-menu #menu="matMenu"><button mat-menu-item="">
+          <mat-icon>camera</mat-icon><a routerLink="/home/scan">Scan</a>
+        </button><button mat-menu-item="">
+          <mat-icon>filter_list</mat-icon><a routerLink="/home/review">Review</a>
+        </button><button mat-menu-item="" onclick="router.navigate([&apos;admin&apos;]);">
+          <mat-icon>settings_input_composite</mat-icon><a routerLink="/home/admin">Admin</a>
+        </button><button mat-menu-item="">
+          <mat-icon>power_settings_new</mat-icon><a routerLink="/login">Logout</a>
+        </button></mat-menu>
+    </mat-sidenav>
+  </mat-sidenav-container>
+  <mat-toolbar fxLayoutAlign="space-between">
+    <div fxLayout="row wrap" fxFlex="70" fxLayoutAlign="start center" fxShow="true" fxHide="false">
+      <h1>Aardher Verification</h1>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="end center" fxShow="true" fxHide="false"><button mat-button="" [matMenuTriggerFor]="menu"><i class="material-icons">menu</i></button></div>
+  </mat-toolbar>
+  <div fxLayout="column " fxFlex="calc(100%-128px)" fxLayoutAlign="  none" fxShow="true" fxHide="false" fxFill="fxFill">
+    <router-outlet></router-outlet>
+  </div>
+  <mat-toolbar>
+    <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <p style="text-align: center">&#xA9; 2018 Neutrinos</p>
+    </div>
+  </mat-toolbar>
 </div>

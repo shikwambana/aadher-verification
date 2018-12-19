@@ -21,5 +21,18 @@
                 "isArray": false
             }
         ]
+    },
+    "e95a6aa9-13ee-18c8-9c66-34ec5b3f2b07": {
+        "dataModelId": "e95a6aa9-13ee-18c8-9c66-34ec5b3f2b07",
+        "name": "scanned_text",
+        "description": "string to store the text that is stored",
+        "dataSource": "neutrinos-delivery-rt",
+        "fields": [
+            {
+                "name": "text",
+                "fieldType": 2,
+                "isArray": false
+            }
+        ]
     }
 }

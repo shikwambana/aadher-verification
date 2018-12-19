@@ -12,6 +12,10 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-statusService
+import { statusService } from '../services/status/status.service';
+//CORE_REFERENCE_IMPORT-saveService
+import { saveService } from '../services/save/save.service';
 //CORE_REFERENCE_IMPORT-adminComponent
 import { adminComponent } from '../components/adminComponent/admin.component';
 //CORE_REFERENCE_IMPORT-reviewComponent
@@ -89,6 +93,10 @@ export const appProviders = [
   },
   NAuthGuardService,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-statusService
+statusService,
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-saveService
+saveService,
 
 ];
 
@@ -97,5 +105,6 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: homeComponent},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full'},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'home', component: homeComponent,
+children: [{path: 'scan', component: scanComponent},{path: 'review', component: reviewComponent},{path: 'admin', component: adminComponent}]},{path: 'login', component: loginComponent},{path: 'unauthorized', redirectTo: '/login', pathMatch: 'full'},{path: '', redirectTo: '/home/scan', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

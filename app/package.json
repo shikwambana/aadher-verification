@@ -50,7 +50,9 @@
         "rxjs": "6.2.0",
         "rxjs-compat": "6.2.0",
         "signature_pad": "2.3.2",
-        "zone.js": "0.8.26"
+        "zone.js": "0.8.26",
+        "cordova-android": "~7.1.0",
+        "cordova-ios": "~4.5.4"
     },
     "devDependencies": {
         "@angular/cli": "6.0.7",
@@ -74,5 +76,11 @@
         "ts-node": "6.0.5",
         "tslint": "5.10.0",
         "typescript": "2.7.2"
+    },
+    "cordova": {
+        "platforms": [
+            "android",
+            "ios"
+        ]
     }
 }

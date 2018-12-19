@@ -1,1 +1,7 @@
-<div>default page template</div>
+<div fxLayout="column " fxLayoutAlign="center center" fxShow="true" fxHide="false">
+  <div fxLayout="column " fxFlex="calc(80%-128px)" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+    <h1>Scan your picture to get the text</h1>
+  </div>
+  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="space-between none" fxShow="true" fxHide="false"><button mat-button="" class="scan-btns" [ocrOptions]="{quality:100, correctOrientation: true, uriOrBase:0, returnType:1}" (onsuccess)="success($event);" (onerror)="error($event);" n-ocr="">Scan</button><button mat-button="" class="scan-btns" (click)="display();">Display</button></div>
+  <p>Your text is {{ displayText }}</p>
+</div>

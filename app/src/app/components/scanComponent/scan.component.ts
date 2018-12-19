@@ -18,19 +18,52 @@ import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 export class scanComponent extends NBaseComponent implements OnInit {
     mm: ModelMethods;
 
+    receivedText : string;
+    displayText: string;
+
     constructor(private bdms: NDataModelService) {
         super();
         this.mm = new ModelMethods(bdms);
     }
 
     ngOnInit() {
-
+        
     }
+
+    display(){
+    //    this.displayText = this.get('scanned_text');
+        console.log(this.displayText);
+    }
+    // saveText(text){
+
+        
+    // }
+
+    //the action that occurs if the directive successfully completed its functionality.
+    success($event) {
+        //save text in data model
+        this.displayText = $event;
+        alert(this.displayText);        
+        console.log($event);
+        this.put('scanned_text', $event);
+        
+    }
+
+    // the action that occurs if the directive failed to complete its functionality.
+    error($event) {
+        this.displayText = $event;
+        alert(this.displayText);        
+        console.log($event);
+        this.put('scanned_text', $event);        
+    }
+
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.mm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
+                this.displayText = result;
+                return this.displayText;
             },
             error => {
                 // Handle errors here

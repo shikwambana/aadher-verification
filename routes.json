@@ -7,7 +7,21 @@
             "redirectTo": "",
             "resolve": "",
             "data": "",
-            "canActivate": ""
+            "canActivate": "",
+            "children": [
+                {
+                    "path": "scan",
+                    "component": "scanComponent"
+                },
+                {
+                    "path": "review",
+                    "component": "reviewComponent"
+                },
+                {
+                    "path": "admin",
+                    "component": "adminComponent"
+                }
+            ]
         },
         {
             "path": "login",
@@ -27,7 +41,7 @@
             "path": "''",
             "component": "",
             "pathMatch": "full",
-            "redirectTo": "/home",
+            "redirectTo": "/home/scan",
             "resolve": "",
             "data": "",
             "canActivate": "",

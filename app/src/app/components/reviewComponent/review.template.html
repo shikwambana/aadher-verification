@@ -1,10 +1,16 @@
 <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-  <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false"><button mat-button="">Pending</button><button mat-button="">Approved</button></div>
-  <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
-      <p></p>
-      <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false"><button mat-button=""></button><button mat-button=""></button></div>
-    </div>
-    <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false"><img></div>
-  </div>
+  <mat-tab-group>
+    <mat-tab label="Pending">
+      <mat-card class="card">
+        <div fxLayout="row " fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+          <div fxLayout="column wrap" fxFlex="70" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+            <p>Name: Alpha Shikwambana <br> ID NO: 9503275538084 <br> Address: 192 Longtom str</p>
+            <div fxLayout="row wrap" fxLayoutAlign="start center" fxShow="true" fxHide="false"><button mat-button="" style="background-color: green;">Approve</button><button mat-button="" style="background-color: red;">Reject</button></div>
+          </div>
+          <div fxLayout="column wrap" fxFlex="29" fxLayoutAlign="center stretch" fxShow="true" fxHide="false"><img imgSrc="/Web/paper.jpg" width="100%" heigh="auto"></div>
+        </div>
+      </mat-card>
+    </mat-tab>
+    <mat-tab label="Approved"></mat-tab>
+  </mat-tab-group>
 </div>
